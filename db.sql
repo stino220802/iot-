@@ -1,9 +1,21 @@
-CREATE TABLE shop (
- article INT(4) UNSIGNED ZEROFILL DEFAULT '0000' NOT NULL,
- dealer  CHAR(20)                 DEFAULT ''     NOT NULL,
- price   DOUBLE(16,2)             DEFAULT '0.00' NOT NULL,
- PRIMARY KEY(article, dealer));
+CREATE TABLE future-proof (
+ 
+ sensor_id VARCHAR(250),
+ value INT,
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+ );
 
-INSERT INTO shop VALUES
-(1,'A',3.45),(1,'B',3.99),(2,'A',10.99),(3,'B',1.45),(3,'C',1.69),
-(3,'D',1.25),(4,'D',19.95);
+CREATE TABLE sensor_1(
+ ID VARCHAR(250), 
+ name VARCHAR(250), 
+ external_ip VARCHAR(250), 
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+); 
+
+
+CREATE TABLE sensor_2(
+ ID VARCHAR(250), 
+ name VARCHAR(250), 
+ external_ip VARCHAR(250), 
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+); 
