@@ -34,14 +34,14 @@ echo "<?xml version='1.0' encoding='UTF-8'?>
 
 while($row = mysql_fetch_array($query))
 {
-$title=$row['title']; 
-$link=$row['link']; 
-$description=$row['description']; 
+$sensor_id=$row['sensor_id']; 
+$value=$row['value']; 
+$timestamp=$row['timestamp']; 
 
 echo "<item>
-<title>$title</title>
-<link>$link</link>
-<description>$description</description>
+<title>$sensor_id</title>
+<value>$value</value>
+<timestamp>$timestamp</timestamp>
 </item>"; 
 } 
 echo "</channel></rss>"; 
