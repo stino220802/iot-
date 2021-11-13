@@ -1,24 +1,17 @@
-CREATE TABLE future-proof (
+CREATE TABLE future_proof (
  
  sensor_id VARCHAR(250),
  value INT,
- created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+ created_at timestamp DEFAULT CURRENT_TIMESTAMP
  );
 
-CREATE TABLE sensor_1(
+CREATE TABLE lastknown(
  ID VARCHAR(250), 
  name VARCHAR(250), 
  external_ip VARCHAR(250), 
- created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+ created_at timestamp DEFAULT CURRENT_TIMESTAMP
 ); 
 
-
-CREATE TABLE sensor_2(
- ID VARCHAR(250), 
- name VARCHAR(250), 
- external_ip VARCHAR(250), 
- created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-); 
 
 CREATE TABLE RSS_FEED
 (
