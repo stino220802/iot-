@@ -5,3 +5,4 @@ This is a project tp introduce people to iot. It receives data via an embeded de
 [link](http://12001732.pxl-ea-ict.be/)
 
 ## flowchart 
+![image](./flowchart.PNG)
